@@ -7,7 +7,7 @@
     Ultimi articoli:
     <ul>
         @foreach($articles as $article)
-            <li>{{$article->title}} by {{$article->author->name}}</li>
+            <li>{{$article->title}} by {{$article->author->name}} ({{$article->views}} views)</li>
         @endforeach
         <li><a href="{{route('admin::newarticle')}}">Crea nuovo</a></li>
     </ul>
