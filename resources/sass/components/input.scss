@@ -1,0 +1,37 @@
+input[type=username], input[type=password], input[type=submit], .input {
+    height: 35px;
+}
+
+input[type=username], input[type=password], .input {
+    margin: 0;
+    padding: 0 10px;
+    outline: none;
+    border: 1px white solid;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    //padding: 5px 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+    transition-property: color, background-color;
+    transition-duration: .25s;
+    transition-timing-function: ease;
+    font-weight: 500;
+    cursor: pointer;
+    height: 37px;
+    padding: 0 15px;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

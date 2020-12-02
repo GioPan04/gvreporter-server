@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Texturina", serif;
+}
+
+input[type=username],
+input[type=password],
+input[type=submit],
+.input {
+  height: 35px;
+}
+
+input[type=username],
+input[type=password],
+.input {
+  margin: 0;
+  padding: 0 10px;
+  outline: none;
+  border: 1px white solid;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+}
+
+input[type=username]:focus,
+input[type=password]:focus,
+.input:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  transition-property: color, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  font-weight: 500;
+  cursor: pointer;
+  height: 37px;
+  padding: 0 15px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+  outline: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form__login input {
+  margin: 2.5px 0;
+}
+
