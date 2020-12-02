@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Auth;
 class DashboardController extends Controller
 {
     public function index() {
-        return view('admin.dashboard');
+        $articles = Article::limit(5)->get();
+        return view('admin.dashboard', ['articles' => $articles]);
     }
 
     public function createArticle() {
